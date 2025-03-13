@@ -1,0 +1,544 @@
+/* Estilos generales */
+body {
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    background-color: #8B0000;
+    color: white;
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex; /* Cambia a flexbox para mejor control */
+    justify-content: space-between; /* Separa el logo del menú */
+    align-items: center;
+    padding: 30px 170px; /* Agrega padding a los lados */
+    background-color: #8B0000;
+    font-size: 18px;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 40px; /* Espacio entre elementos del menú */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px; /* Ajusta el tamaño del texto */
+}
+
+
+/* Hero Section */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    padding: 70px 170px;
+    gap: 60px; /* Espacio entre columnas */
+}
+
+.hero-text {
+    grid-column: 1;
+    align-self: flex-start; /* Alinea el texto en la parte superior */
+}
+
+.hero-text h1 {
+    font-size: 54px;
+   
+}
+
+.hero-text p{
+    padding-bottom: 15px;
+}
+
+.hero-text button {
+    padding: 12px 27px;
+    background-color: #2e2a2a;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+/* Contenedor de la imagen */
+.hero-image {
+    grid-column: 2;
+    display: flex;
+    justify-content: center; /* Centra la imagen dentro del div */
+    align-items: center;
+}
+
+/* Imagen */
+.hero-image img {
+    width: 420px; /* Hace que la imagen no se salga de su contenedor */
+    height: auto; /* Mantiene la proporción */
+}
+
+.hero-image1{
+    display: none;
+}
+
+
+/* Companies Section */
+.companies {
+    text-align: center;
+    padding: 30px; /* Reduce el padding */
+}
+
+.companies p{
+    color:#504949;
+}
+
+.companies .logos {
+    display: flex; /* Usa flexbox en vez de grid */
+    justify-content: center; /* Centra los logos */
+    align-items: center;
+    gap: 110px; /* Espacio entre logos */
+    background-color: rgba(128, 128, 128, 0.7); /* Fondo gris translúcido */
+    padding: 15px 35px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 60%; /* Ajusta el tamaño del contenedor */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+.companies .logos img {
+    width: 120px; /* Ajusta tamaño de los logos */
+    height: auto;
+}
+
+
+/* Branding Section */
+.branding {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 60px 150px;
+    gap: 130px;
+}
+
+.branding img {
+    grid-column: 1;
+    width: 410px;
+    ;
+}
+
+.branding-text h1{
+    grid-column: 2;
+    font-size: 42px;
+}
+
+
+/* Custom Section */
+.custom {
+    text-align: center;
+    padding: 20px 170px;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.custom h1{
+    font-size: 45px;
+    padding-bottom: 120px;
+}
+
+.custom h4{
+    display: none;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.card {
+    background-color: #fff;
+    color: #240233;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 13px;    
+}
+
+.card3{ 
+    background-color: #fff;
+    color: #240233;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 13px;    
+}
+
+.card p{
+    color: rgba(97, 92, 92, 0.774);
+}
+
+/* Contenedor para centrar la sección */
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background-color: #8B0000; /* Rojo oscuro */
+    padding: 0px 40px;
+}
+
+/* Sección de contacto */
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px; /* Espaciado entre imagen y texto */
+    background-color: #8d90a0; /* Fondo gris */
+    border-radius: 20px;
+    max-width: 900px; /* Reducido para mejor proporción */
+    width: 90%;
+    padding: 0px 50px;
+}
+
+/* Imagen */
+.contact img {
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+/* Texto */
+.contact-text {
+    text-align: left;
+}
+
+/* Título */
+.contact-text h1 {
+    font-size: 47px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    
+}
+
+/* Párrafo */
+.contact-text p {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+/* Estilos del botón */
+.contact button {
+    padding: 12px 27px;
+    background-color: #8B0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Efecto hover en el botón */
+.contact button:hover {
+    background-color: #a40000;
+}
+
+
+
+/* Footer */
+.footer {
+    background-color: #7D706D; /* Color de fondo basado en la imagen */
+    padding: 50px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-column p {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-column ul li a:hover {
+    color: #ddd;
+}
+
+/* Para que sea responsive */
+@media (max-width: 768px) {
+   /* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #8B0000;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #8B0000;
+    font-size: 18px;
+}
+
+.navbar ul {
+  display: none;
+  
+}
+
+.menu-icon{
+    display: block;
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+}
+
+.hero-text p {
+    padding-bottom: 15px;
+}
+
+.hero-text button {
+    padding: 12px 27px;
+    background-color: #000000;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.hero-image img {
+display: none;
+
+}
+
+.hero-image1{
+    display: block;
+}
+
+/* Companies Section */
+.companies {
+    text-align: center;
+    padding: 20px;
+}
+
+.companies .logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgba(27, 11, 65, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.companies .logos img {
+    width: 60px;
+    height: auto;
+}
+
+/* Branding Section */
+.branding {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.branding img {
+    width: 80%;
+    max-width: 400px;
+    padding: auto;
+}
+
+.branding-text h1 {
+    font-size: 32px;
+}
+
+
+
+/* Custom Section */
+.custom {
+    text-align: center;
+    padding: 0px;
+}
+
+.custom h1{
+    padding-bottom: 2px;
+}
+
+.custom h4{
+    display: block;
+    padding-bottom: 4px;
+
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 40px;
+}
+
+.card {
+    background-color: #fff;
+    color: #240233;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.card3{ 
+  display: none;   
+}
+
+/* Contact Section */
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8B0000;
+    padding: 5px 20px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(27, 11, 65, 0.7);
+    border-radius: 20px;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.contact img {
+   display: none;
+}
+
+.contact-text h1 {
+    font-size: 32px;
+    color: white;
+}
+
+.contact-text p {
+    font-size: 16px;
+    color: white;
+}
+
+.contact button {
+    padding: 12px 27px;
+    background-color: #8B0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    background-color: rgba(27, 11, 65, 0.7);
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-column {
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.footer-column p {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #ddd;
+}
+
+
+}
